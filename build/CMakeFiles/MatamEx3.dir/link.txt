@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\MatamEx3.dir/objects.a
+C:\PROGRA~1\gcc\bin\ar.exe qc CMakeFiles\MatamEx3.dir/objects.a @CMakeFiles\MatamEx3.dir\objects1.rsp
+C:\PROGRA~1\gcc\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\MatamEx3.dir/objects.a -Wl,--no-whole-archive -o MatamEx3.exe -Wl,--out-implib,libMatamEx3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MatamEx3.dir\linklibs.rsp
