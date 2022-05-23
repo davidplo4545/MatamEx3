@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/david/Desktop/MatamHW/MatamEx3/main.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/main.cpp.obj"
+  "C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj"
+  "C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPointsExampleTest.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj"
+  "C:/Users/david/Desktop/MatamHW/MatamEx3/Queue.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/Queue.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

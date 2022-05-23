@@ -1,3 +1,4 @@
+#include <new>
 #ifndef QUEUE_MATAM
 #define QUEUE_MATAM
 
@@ -55,10 +56,10 @@ Queue<T>::Queue(const Queue<T>& queue):
                 m_data[i]=queue.m_data[i];
             }
         }
-        catch(const std::bad_alloc& e)
+        catch(const std::bad_alloc&)
         {
             delete []m_data;
-            throw();
+            throw;
         }
     
     }
@@ -83,18 +84,14 @@ void Queue<T>::expand()
             tempData[i] = m_data[i];
         }
     }
-    catch(const std::bad_alloc& e)
+    catch(const std::bad_alloc&)
     {
         delete []tempData;
         throw;
     }
-    
-
     delete [] m_data;
     m_maxSize = newMaxSize;
     m_data = tempData;
-    return *this;
-
 }
 
 template<class T>
@@ -112,10 +109,10 @@ Queue<T>& Queue<T>::operator=(const Queue& queue)
             tempData[i] = queue.m_data[i];
         }
     }
-    catch(const std::bad_alloc& e)
+    catch(const std::bad_alloc&)
     {
         delete []tempData;
-        throw();
+        throw;
     }
     
     delete[] m_data;
@@ -176,7 +173,7 @@ template<class T,class Condition>
 Queue<T> filter(const Queue<T>& queue, Condition filterCondition) 
 {
     Queue<T> filtered = Queue<T>();
-    for(const T& item: *this)
+    for(const T& item: queue)
     {
         if(filterCondition(item))
         {
@@ -230,7 +227,7 @@ public:
 
 template<class T>
 Queue<T>::Iterator::Iterator(const Queue<T>* queue, int index):
-    queue(queue), index(index){}
+    m_queue(queue), m_index(index){}
 
 template<class T>
 const T&  Queue<T>::Iterator::operator*() const

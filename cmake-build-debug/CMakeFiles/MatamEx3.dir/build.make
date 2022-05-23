@@ -65,32 +65,62 @@ include CMakeFiles/MatamEx3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MatamEx3.dir/flags.make
 
-CMakeFiles/MatamEx3.dir/main.cpp.obj: CMakeFiles/MatamEx3.dir/flags.make
-CMakeFiles/MatamEx3.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MatamEx3.dir/main.cpp.obj"
-	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MatamEx3.dir\main.cpp.obj -c C:\Users\david\Desktop\MatamHW\MatamEx3\main.cpp
+CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj: CMakeFiles/MatamEx3.dir/flags.make
+CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj: ../HealthPointsExampleTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MatamEx3.dir\HealthPointsExampleTest.cpp.obj -c C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPointsExampleTest.cpp
 
-CMakeFiles/MatamEx3.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MatamEx3.dir/main.cpp.i"
-	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\david\Desktop\MatamHW\MatamEx3\main.cpp > CMakeFiles\MatamEx3.dir\main.cpp.i
+CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPointsExampleTest.cpp > CMakeFiles\MatamEx3.dir\HealthPointsExampleTest.cpp.i
 
-CMakeFiles/MatamEx3.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MatamEx3.dir/main.cpp.s"
-	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\david\Desktop\MatamHW\MatamEx3\main.cpp -o CMakeFiles\MatamEx3.dir\main.cpp.s
+CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPointsExampleTest.cpp -o CMakeFiles\MatamEx3.dir\HealthPointsExampleTest.cpp.s
+
+CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj: CMakeFiles/MatamEx3.dir/flags.make
+CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj: ../HealthPoints.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MatamEx3.dir\HealthPoints.cpp.obj -c C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPoints.cpp
+
+CMakeFiles/MatamEx3.dir/HealthPoints.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MatamEx3.dir/HealthPoints.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPoints.cpp > CMakeFiles\MatamEx3.dir\HealthPoints.cpp.i
+
+CMakeFiles/MatamEx3.dir/HealthPoints.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MatamEx3.dir/HealthPoints.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\david\Desktop\MatamHW\MatamEx3\HealthPoints.cpp -o CMakeFiles\MatamEx3.dir\HealthPoints.cpp.s
+
+CMakeFiles/MatamEx3.dir/Queue.cpp.obj: CMakeFiles/MatamEx3.dir/flags.make
+CMakeFiles/MatamEx3.dir/Queue.cpp.obj: ../Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MatamEx3.dir/Queue.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MatamEx3.dir\Queue.cpp.obj -c C:\Users\david\Desktop\MatamHW\MatamEx3\Queue.cpp
+
+CMakeFiles/MatamEx3.dir/Queue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MatamEx3.dir/Queue.cpp.i"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\david\Desktop\MatamHW\MatamEx3\Queue.cpp > CMakeFiles\MatamEx3.dir\Queue.cpp.i
+
+CMakeFiles/MatamEx3.dir/Queue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MatamEx3.dir/Queue.cpp.s"
+	C:\TDM-GCC-64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\david\Desktop\MatamHW\MatamEx3\Queue.cpp -o CMakeFiles\MatamEx3.dir\Queue.cpp.s
 
 # Object files for target MatamEx3
 MatamEx3_OBJECTS = \
-"CMakeFiles/MatamEx3.dir/main.cpp.obj"
+"CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj" \
+"CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj" \
+"CMakeFiles/MatamEx3.dir/Queue.cpp.obj"
 
 # External object files for target MatamEx3
 MatamEx3_EXTERNAL_OBJECTS =
 
-MatamEx3.exe: CMakeFiles/MatamEx3.dir/main.cpp.obj
+MatamEx3.exe: CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj
+MatamEx3.exe: CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj
+MatamEx3.exe: CMakeFiles/MatamEx3.dir/Queue.cpp.obj
 MatamEx3.exe: CMakeFiles/MatamEx3.dir/build.make
 MatamEx3.exe: CMakeFiles/MatamEx3.dir/linklibs.rsp
 MatamEx3.exe: CMakeFiles/MatamEx3.dir/objects1.rsp
 MatamEx3.exe: CMakeFiles/MatamEx3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MatamEx3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\david\Desktop\MatamHW\MatamEx3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable MatamEx3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MatamEx3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

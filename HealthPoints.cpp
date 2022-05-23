@@ -33,15 +33,17 @@ HealthPoints& HealthPoints::operator=(const HealthPoints& hp)
     m_maxValue=hp.m_maxValue;
     return *this;
 }
-HealthPoints operator+(const int hpAdd, HealthPoints& hp)
+HealthPoints operator+(const int hpAdd, const HealthPoints& hp)
 {
-    hp+=hpAdd;
-    return hp;
+    HealthPoints result = hp;
+    result+=hpAdd;
+    return result;
 }
-HealthPoints operator-(const int hpSub, HealthPoints& hp) // Check limits later
+HealthPoints operator-(const int hpSub, const HealthPoints& hp) // Check limits later
 {
-    hp-=hpSub;
-    return hp;
+    HealthPoints result = hp;
+    result-=hpSub;
+    return result;
 }
 HealthPoints& HealthPoints::operator+(const int hpAdd) // Check limits later
 {
