@@ -18,11 +18,13 @@ HealthPoints::HealthPoints(const HealthPoints& hp)
 
 HealthPoints& HealthPoints::operator+=(const int hpAdd) 
 {
-    m_currValue+=hpAdd;
+    m_currValue+= (m_currValue+hpAdd)>m_maxValue? m_maxValue : m_currValue+hpAdd;
+    return *this;
 }
-HealthPoints& HealthPoints::operator-=(const int hpSub) // do not let the substractiongo below zero/max
+HealthPoints& HealthPoints::operator-=(const int hpSub) 
 {
-    m_currValue-=hpSub;
+    m_currValue=(m_currValue-hpSub) < 0 ? 0 : m_currValue-hpSub;
+    return *this;
 }
 
 HealthPoints& HealthPoints::operator=(const HealthPoints& hp) 
@@ -41,13 +43,15 @@ HealthPoints operator-(const int hpSub, HealthPoints& hp) // Check limits later
     hp-=hpSub;
     return hp;
 }
-HealthPoints operator+(HealthPoints& hp ,const int hpAdd) // Check limits later
+HealthPoints& HealthPoints::operator+(const int hpAdd) // Check limits later
 {
-    return hpAdd + hp;
+    m_currValue +=hpAdd;
+    return *this;
 }
-HealthPoints operator-(HealthPoints& hp, const int hpSub)
+HealthPoints& HealthPoints::operator-(const int hpSub)
 {
-    return hpSub - hp;
+    m_currValue -= hpSub;
+    return *this;
 }
 
 

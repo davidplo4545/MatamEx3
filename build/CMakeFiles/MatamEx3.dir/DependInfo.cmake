@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Work/MatamEx3/MatamEx3/main.cpp" "CMakeFiles/MatamEx3.dir/main.cpp.obj" "gcc" "CMakeFiles/MatamEx3.dir/main.cpp.obj.d"
+  "C:/Work/MatamEx3/MatamEx3/HealthPoints.cpp" "CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj" "gcc" "CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj.d"
+  "C:/Work/MatamEx3/MatamEx3/HealthPointsExampleTest.cpp" "CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj" "gcc" "CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj.d"
   )
 
 # Targets to which this target links.

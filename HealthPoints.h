@@ -1,9 +1,8 @@
 #include <ostream>
-class InvalidArgument{
-public:
-    InvalidArgument(){}
 
-};
+#ifndef HEALTH_POINTS_MATAM
+#define HEALTH_POINTS_MATAM
+
 
 
 class HealthPoints{
@@ -25,13 +24,16 @@ public:
     HealthPoints& operator=(const HealthPoints& hp);
     HealthPoints& operator+=(const int hpAdd);
     HealthPoints& operator-=(const int hpSub);
+
+    HealthPoints& operator+(const int hpAdd);
+    HealthPoints& operator-(const int hpAdd); 
+
 };
 
 
 HealthPoints operator+(const int hpAdd,const HealthPoints& hp);
 HealthPoints operator-(const int hpAdd,const HealthPoints& hp);
-HealthPoints operator+(const HealthPoints& hp, const int hpAdd); // convert to class function mabye
-HealthPoints operator-(const HealthPoints& hp, const int hpAdd); // convert to class function mabye
+
 
 bool operator!=(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator>(const HealthPoints& hp1,const HealthPoints& hp2);
@@ -39,5 +41,5 @@ bool operator<(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator>=(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator<=(const HealthPoints& hp1,const HealthPoints& hp2);
 
-
+#endif
 

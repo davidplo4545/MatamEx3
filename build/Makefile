@@ -128,29 +128,53 @@ MatamEx3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/build
 .PHONY : MatamEx3/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+HealthPoints.obj: HealthPoints.cpp.obj
+.PHONY : HealthPoints.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+HealthPoints.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj
+.PHONY : HealthPoints.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+HealthPoints.i: HealthPoints.cpp.i
+.PHONY : HealthPoints.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/main.cpp.i
-.PHONY : main.cpp.i
+HealthPoints.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPoints.cpp.i
+.PHONY : HealthPoints.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+HealthPoints.s: HealthPoints.cpp.s
+.PHONY : HealthPoints.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/main.cpp.s
-.PHONY : main.cpp.s
+HealthPoints.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPoints.cpp.s
+.PHONY : HealthPoints.cpp.s
+
+HealthPointsExampleTest.obj: HealthPointsExampleTest.cpp.obj
+.PHONY : HealthPointsExampleTest.obj
+
+# target to build an object file
+HealthPointsExampleTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj
+.PHONY : HealthPointsExampleTest.cpp.obj
+
+HealthPointsExampleTest.i: HealthPointsExampleTest.cpp.i
+.PHONY : HealthPointsExampleTest.i
+
+# target to preprocess a source file
+HealthPointsExampleTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.i
+.PHONY : HealthPointsExampleTest.cpp.i
+
+HealthPointsExampleTest.s: HealthPointsExampleTest.cpp.s
+.PHONY : HealthPointsExampleTest.s
+
+# target to generate assembly for a file
+HealthPointsExampleTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.s
+.PHONY : HealthPointsExampleTest.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MatamEx3
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... HealthPoints.obj
+	@echo ... HealthPoints.i
+	@echo ... HealthPoints.s
+	@echo ... HealthPointsExampleTest.obj
+	@echo ... HealthPointsExampleTest.i
+	@echo ... HealthPointsExampleTest.s
 .PHONY : help
 
 
