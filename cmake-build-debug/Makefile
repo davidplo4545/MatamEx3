@@ -176,29 +176,53 @@ HealthPointsExampleTest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.s
 .PHONY : HealthPointsExampleTest.cpp.s
 
-Queue.obj: Queue.cpp.obj
-.PHONY : Queue.obj
+QueueExampleTests.obj: QueueExampleTests.cpp.obj
+.PHONY : QueueExampleTests.obj
 
 # target to build an object file
-Queue.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/Queue.cpp.obj
-.PHONY : Queue.cpp.obj
+QueueExampleTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/QueueExampleTests.cpp.obj
+.PHONY : QueueExampleTests.cpp.obj
 
-Queue.i: Queue.cpp.i
-.PHONY : Queue.i
+QueueExampleTests.i: QueueExampleTests.cpp.i
+.PHONY : QueueExampleTests.i
 
 # target to preprocess a source file
-Queue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/Queue.cpp.i
-.PHONY : Queue.cpp.i
+QueueExampleTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/QueueExampleTests.cpp.i
+.PHONY : QueueExampleTests.cpp.i
 
-Queue.s: Queue.cpp.s
-.PHONY : Queue.s
+QueueExampleTests.s: QueueExampleTests.cpp.s
+.PHONY : QueueExampleTests.s
 
 # target to generate assembly for a file
-Queue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/Queue.cpp.s
-.PHONY : Queue.cpp.s
+QueueExampleTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/QueueExampleTests.cpp.s
+.PHONY : QueueExampleTests.cpp.s
+
+TestMain.obj: TestMain.cpp.obj
+.PHONY : TestMain.obj
+
+# target to build an object file
+TestMain.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/TestMain.cpp.obj
+.PHONY : TestMain.cpp.obj
+
+TestMain.i: TestMain.cpp.i
+.PHONY : TestMain.i
+
+# target to preprocess a source file
+TestMain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/TestMain.cpp.i
+.PHONY : TestMain.cpp.i
+
+TestMain.s: TestMain.cpp.s
+.PHONY : TestMain.s
+
+# target to generate assembly for a file
+TestMain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MatamEx3.dir\build.make CMakeFiles/MatamEx3.dir/TestMain.cpp.s
+.PHONY : TestMain.cpp.s
 
 # Help Target
 help:
@@ -215,9 +239,12 @@ help:
 	@echo ... HealthPointsExampleTest.obj
 	@echo ... HealthPointsExampleTest.i
 	@echo ... HealthPointsExampleTest.s
-	@echo ... Queue.obj
-	@echo ... Queue.i
-	@echo ... Queue.s
+	@echo ... QueueExampleTests.obj
+	@echo ... QueueExampleTests.i
+	@echo ... QueueExampleTests.s
+	@echo ... TestMain.obj
+	@echo ... TestMain.i
+	@echo ... TestMain.s
 .PHONY : help
 
 

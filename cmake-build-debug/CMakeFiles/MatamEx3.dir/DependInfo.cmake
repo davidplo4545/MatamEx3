@@ -10,7 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj"
   "C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPointsExampleTest.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj"
-  "C:/Users/david/Desktop/MatamHW/MatamEx3/Queue.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/Queue.cpp.obj"
+  "C:/Users/david/Desktop/MatamHW/MatamEx3/QueueExampleTests.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/QueueExampleTests.cpp.obj"
+  "C:/Users/david/Desktop/MatamHW/MatamEx3/TestMain.cpp" "C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug/CMakeFiles/MatamEx3.dir/TestMain.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

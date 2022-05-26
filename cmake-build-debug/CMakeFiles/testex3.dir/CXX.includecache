@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.cpp
+HealthPoints.h
+C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.h
+
+C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.h
+ostream
+-
+
+C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPointsExampleTest.cpp
+sstream
+-
+HealthPoints.h
+C:/Users/david/Desktop/MatamHW/MatamEx3/HealthPoints.h
+
+C:/Users/david/Desktop/MatamHW/MatamEx3/TestMain.cpp
+functional
+-
+TestUtils.h
+C:/Users/david/Desktop/MatamHW/MatamEx3/TestUtils.h
+
+C:/Users/david/Desktop/MatamHW/MatamEx3/TestUtils.h
+functional
+-
+iostream
+-
+

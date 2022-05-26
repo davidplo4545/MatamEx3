@@ -3,4 +3,4 @@ project(MatamEx3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MatamEx3 HealthPointsExampleTest.cpp HealthPoints.cpp Queue.cpp)
+add_executable(MatamEx3 TestMain.cpp HealthPointsExampleTest.cpp QueueExampleTests.cpp HealthPoints.cpp)

@@ -1,7 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/MatamEx3.dir/HealthPoints.cpp.obj"
   "CMakeFiles/MatamEx3.dir/HealthPointsExampleTest.cpp.obj"
-  "CMakeFiles/MatamEx3.dir/Queue.cpp.obj"
+  "CMakeFiles/MatamEx3.dir/QueueExampleTests.cpp.obj"
+  "CMakeFiles/MatamEx3.dir/TestMain.cpp.obj"
   "MatamEx3.exe"
   "MatamEx3.exe.manifest"
   "MatamEx3.pdb"

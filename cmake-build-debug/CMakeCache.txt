@@ -253,6 +253,12 @@ MatamEx3_BINARY_DIR:STATIC=C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-d
 //Value Computed by CMake
 MatamEx3_SOURCE_DIR:STATIC=C:/Users/david/Desktop/MatamHW/MatamEx3
 
+//Value Computed by CMake
+testex3_BINARY_DIR:STATIC=C:/Users/david/Desktop/MatamHW/MatamEx3/cmake-build-debug
+
+//Value Computed by CMake
+testex3_SOURCE_DIR:STATIC=C:/Users/david/Desktop/MatamHW/MatamEx3
+
 
 ########################
 # INTERNAL cache entries

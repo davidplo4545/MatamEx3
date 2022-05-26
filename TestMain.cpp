@@ -26,7 +26,7 @@ std::function<bool()> testsList[] = {
 	QueueTests::testQueueMethods,
 	QueueTests::testModuleFunctions,
 	QueueTests::testExceptions,
-	QueueTests::testConstQueue
+    QueueTests::testConstQueue,
 };
 
 const int NUMBER_OF_TESTS = sizeof(testsList)/sizeof(std::function<bool()>);

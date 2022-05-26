@@ -18,7 +18,7 @@ HealthPoints::HealthPoints(const HealthPoints& hp)
 
 HealthPoints& HealthPoints::operator+=(const int hpAdd) 
 {
-    m_currValue+= (m_currValue+hpAdd)>m_maxValue? m_maxValue : m_currValue+hpAdd;
+    m_currValue= (m_currValue+hpAdd)>m_maxValue? m_maxValue : m_currValue+hpAdd;
     return *this;
 }
 HealthPoints& HealthPoints::operator-=(const int hpSub) 
@@ -52,7 +52,7 @@ HealthPoints& HealthPoints::operator+(const int hpAdd) // Check limits later
 }
 HealthPoints& HealthPoints::operator-(const int hpSub)
 {
-    m_currValue -= hpSub;
+    *this -= hpSub;
     return *this;
 }
 
