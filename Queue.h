@@ -23,7 +23,7 @@ public:
     ~Queue();
     Queue& operator=(const Queue& queue);
 
-    void pushBack(T newItem);
+    void pushBack(const T& newItem);
     T& front() const;
     void popFront();
     int size() const;
@@ -132,7 +132,7 @@ int Queue<T>::size() const
 }
 
 template<class T>
-void Queue<T>::pushBack(T newItem)
+void Queue<T>::pushBack(const T& newItem)
 {
      if (m_size==m_maxSize)
      {
@@ -169,6 +169,7 @@ void Queue<T>::popFront()
 } 
 
 
+
 template<class T,class Condition>
 Queue<T> filter(const Queue<T>& queue, Condition filterCondition) 
 {
@@ -177,7 +178,8 @@ Queue<T> filter(const Queue<T>& queue, Condition filterCondition)
     {
         if(filterCondition(item))
         {
-            filtered.pushBack(item);
+            T tempItem = item;
+            filtered.pushBack(tempItem);
         }
     }
     return filtered;
@@ -227,7 +229,7 @@ class Queue<T>::Iterator {
 public:
     T& operator*() const;
     Iterator& operator++();
-    Iterator& operator++(int);
+    Iterator operator++(int);
     bool operator!=(const Iterator& iterator) const;
     Iterator(const Iterator&) = default;
     Iterator& operator=(const Iterator&) = default;
@@ -258,7 +260,7 @@ typename Queue<T>::Iterator& Queue<T>::Iterator::operator++()
 }
 
 template<class T>
-typename Queue<T>::Iterator& Queue<T>::Iterator::operator++(int)
+typename Queue<T>::Iterator Queue<T>::Iterator::operator++(int)
 {
     Iterator result = *this;
     ++*this;
@@ -281,7 +283,7 @@ class Queue<T>::ConstIterator {
 public:
     const T& operator*() const;
     ConstIterator& operator++();
-    ConstIterator& operator++(int);
+    const ConstIterator operator++(int);
     bool operator!=(const ConstIterator& iterator) const;
     ConstIterator(const ConstIterator&) = default;
     ConstIterator& operator=(const ConstIterator& iterator) = default;
@@ -312,9 +314,9 @@ typename Queue<T>::ConstIterator& Queue<T>::ConstIterator::operator++()
 }
 
 template<class T>
-typename Queue<T>::ConstIterator& Queue<T>::ConstIterator::operator++(int)
+const typename Queue<T>::ConstIterator Queue<T>::ConstIterator::operator++(int)
 {
-    Iterator result = *this;
+    const ConstIterator result = *this;
     ++*this;
     return result;
 }

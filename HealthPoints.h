@@ -25,8 +25,8 @@ public:
     HealthPoints& operator+=(const int hpAdd);
     HealthPoints& operator-=(const int hpSub);
 
-    HealthPoints& operator+(const int hpAdd);
-    HealthPoints& operator-(const int hpAdd); 
+    HealthPoints operator+(const int hpAdd);
+    HealthPoints operator-(const int hpAdd);
 
 };
 
