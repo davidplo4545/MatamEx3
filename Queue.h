@@ -174,12 +174,11 @@ template<class T,class Condition>
 Queue<T> filter(const Queue<T>& queue, Condition filterCondition) 
 {
     Queue<T> filtered = Queue<T>();
-    for(const T& item: queue)
+    for(T item: queue)
     {
         if(filterCondition(item))
         {
-            T tempItem = item;
-            filtered.pushBack(tempItem);
+            filtered.pushBack(item);
         }
     }
     return filtered;
