@@ -43,7 +43,7 @@ private:
     
 public:
 
- /*
+    /*
      * C'tor of HealthPoints
      *
      * @param maxHp - The maximum hp for the hp object.
@@ -62,24 +62,22 @@ public:
     HealthPoints(const HealthPoints& hp);
 
      /*
-     * D'tor of Card class.
+     * D'tor of HealthPoints class.
      * Here we are explicitly telling the compiler to use the default methods
      * @return
      *      no return.
     */
    ~HealthPoints()=default;
 
-
+    HealthPoints& operator=(const HealthPoints& hp);
 
     class InvalidArgument{};
 
-
-     /*
-     * Standard addition/substraction arithmetic operations. 
-     * @return
-     *      HealthPoints object.
+    /*
+    * Standard addition/substraction arithmetic operations.
+    * @return
+    *      HealthPoints object.
     */
-    HealthPoints& operator=(const HealthPoints& hp);
     HealthPoints& operator+=(const int hpAdd);
     HealthPoints& operator-=(const int hpSub);
     HealthPoints operator+(const int hpAdd);
@@ -92,10 +90,10 @@ HealthPoints operator-(const int hpSub,const HealthPoints& hp);
 
 
 
-    /*
-    * Standard addition/substraction arithmetic operations. 
-    * @return
-    *      boolean value.
+/*
+* Standard addition/substraction arithmetic operations.
+* @return
+*      boolean value.
 */
 bool operator!=(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator>(const HealthPoints& hp1,const HealthPoints& hp2);

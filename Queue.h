@@ -12,26 +12,62 @@ private:
 	static const int HEAD=0;
     static const int EXPAND_RATE = 2;
     static const int INITIAL_SIZE = 10;
-    static const int ELEMENT_NOT_FOUND = -1;
 
+    /*
+    * Increases the size of the queue.
+    *
+    * @return
+    *      void.
+    */
     void expand();
 
 
 public:
-    Queue();
-    Queue(const Queue& queue);
-    ~Queue();
-    Queue& operator=(const Queue& queue);
+    Queue(); // constructor
+    Queue(const Queue& queue); // copy constructor
+    ~Queue(); // D'tor of Queue class
 
+    Queue& operator=(const Queue& queue); // assignment operator
+
+    /*
+    * Pushes a new item to the queue.
+    *
+    * @param newItem - A new item to add.
+    * @return
+    *      void.
+    */
     void pushBack(const T& newItem);
+
+    /*
+    * Gets the first item pushed in the queue.
+    *
+    * @return
+    *      A Template object.
+    */
     T& front() const;
+
+    /*
+    * Removes the first item inside the queue.
+    *
+    * @return
+    *      void.
+    */
     void popFront();
+
+    /*
+    * Returns the queue length.
+    *
+    * @return
+    *      The size of the queue.
+    */
     int size() const;
-    
+
+    // Iterator functions
     class Iterator;
     Iterator begin();
     Iterator end();
 
+    // Const Iterator functions
     class ConstIterator;
     const ConstIterator begin() const;
     const ConstIterator end() const;
@@ -64,7 +100,6 @@ Queue<T>::Queue(const Queue<T>& queue):
         }
     
     }
-
 
 template<class T>
 Queue<T>::~Queue()
@@ -166,15 +201,22 @@ void Queue<T>::popFront()
         m_data[i-1]=m_data[i];
     }
     m_size--;
-} 
+}
 
 
-
+/*
+* Filters the queue by a given function object/pointer.
+*
+* @param queue - A queue to filter.
+* @param filterCondition - A Function Object/Pointer
+* @return
+*      A new queue with the filtered values.
+*/
 template<class T,class Condition>
 Queue<T> filter(const Queue<T>& queue, Condition filterCondition) 
 {
     Queue<T> filtered = Queue<T>();
-    for(T item: queue)
+    for(const T item: queue)
     {
         if(filterCondition(item))
         {
@@ -184,6 +226,14 @@ Queue<T> filter(const Queue<T>& queue, Condition filterCondition)
     return filtered;
 }
 
+/*
+* Maps the queue values and changes them by a given function.
+*
+* @param queue - A queue to filter.
+* @param applyFunc - A Function Object/Pointer
+* @return
+*      void.
+*/
 template<class T, class Apply>
 void transform(Queue<T>& queue, Apply applyFunc)
 {
@@ -198,6 +248,7 @@ typename Queue<T>::Iterator Queue<T>::begin()
 {
     return Iterator(this,0);
 }
+
 template<class T>
 typename Queue<T>::Iterator Queue<T>::end()
 {
@@ -209,6 +260,7 @@ const typename Queue<T>::ConstIterator Queue<T>::begin() const
 {
     return ConstIterator(this,0);
 }
+
 template<class T>
 const typename Queue<T>::ConstIterator Queue<T>::end() const
 {
@@ -226,6 +278,7 @@ class Queue<T>::Iterator {
     Iterator(const Queue<T>* queue, int index);
     friend class Queue<T>;
 public:
+    // Required Iterator operators.
     T& operator*() const;
     Iterator& operator++();
     Iterator operator++(int);
@@ -280,12 +333,13 @@ class Queue<T>::ConstIterator {
     ConstIterator(const Queue<T>* queue, int index);
     friend class Queue<T>;
 public:
+    // Required ConstIterator operators.
     const T& operator*() const;
     ConstIterator& operator++();
     const ConstIterator operator++(int);
     bool operator!=(const ConstIterator& iterator) const;
-    ConstIterator(const ConstIterator&) = default;
-    ConstIterator& operator=(const ConstIterator& iterator) = default;
+    ConstIterator(const ConstIterator&) = default; // constructor
+    ConstIterator& operator=(const ConstIterator& iterator) = default; // assignment operator
 
     class InvalidOperation{};
 };
