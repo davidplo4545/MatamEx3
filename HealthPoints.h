@@ -82,24 +82,24 @@ public:
     HealthPoints& operator=(const HealthPoints& hp);
     HealthPoints& operator+=(const int hpAdd);
     HealthPoints& operator-=(const int hpSub);
-    HealthPoints& operator+(const int hpAdd);
-    HealthPoints& operator-(const int hpAdd); 
+    HealthPoints operator+(const int hpAdd);
+    HealthPoints operator-(const int hpSub); 
 
 };
 
 HealthPoints operator+(const int hpAdd,const HealthPoints& hp);
-HealthPoints operator-(const int hpAdd,const HealthPoints& hp);
+HealthPoints operator-(const int hpSub,const HealthPoints& hp);
 
 
 
-     /*
-     * Standard addition/substraction arithmetic operations. 
-     * @return
-     *      boolean value.
-    */
+    /*
+    * Standard addition/substraction arithmetic operations. 
+    * @return
+    *      boolean value.
+*/
 bool operator!=(const HealthPoints& hp1,const HealthPoints& hp2);
-bool operator> (const HealthPoints& hp1,const HealthPoints& hp2);
-bool operator< (const HealthPoints& hp1,const HealthPoints& hp2);
+bool operator>(const HealthPoints& hp1,const HealthPoints& hp2);
+bool operator<(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator>=(const HealthPoints& hp1,const HealthPoints& hp2);
 bool operator<=(const HealthPoints& hp1,const HealthPoints& hp2);
 
